@@ -43,7 +43,7 @@ class CircularLinkedList (object):
 		prev_node = None
 
 		while True:
-			if this_node.get_data() == d:	# found
+			if this_node.get_data() == d:
 				if prev_node is not None:
 					prev_node.set_next(this_node.get_next())
 				else:
@@ -52,9 +52,9 @@ class CircularLinkedList (object):
 					this_node.set_next(self.root.get_next())
 					self.root = self.root.get_next()
 				self.size -= 1
-				return True     # data removed
+				return True
 			elif this_node.get_next() == self.root:
-				return False	# data not found
+				return False
 			prev_node = this_node
 			this_node = this_node.get_next()
 
@@ -62,7 +62,7 @@ class CircularLinkedList (object):
 		this_node = self.root
 		while True:
 			if this_node.get_data() == d:
-				return d
+				return True
 			elif this_node.get_next() == self.root:
 				return False
 			this_node = this_node.get_next()
@@ -79,13 +79,13 @@ class CircularLinkedList (object):
 
 def main():
 	myList = CircularLinkedList()
-	myList.add(2)
 	myList.add(6)
-	myList.add(3)
+	myList.add(7)
+	myList.add(4)
 	myList.add(8)
-	myList.add(1)
+	myList.add(2)
 	print("Find 8", myList.find(8))
-	print("Find 12", myList.find(12))
+	print("Find 13", myList.find(13))
 
 	cur = myList.root
 	print (cur.to_string())
@@ -97,9 +97,9 @@ def main():
 	myList.print_list()
 	myList.remove(8)
 	print("size="+str(myList.get_size()))
-	print("Remove 15", myList.remove(15))
+	print("Remove 7", myList.remove(7))
 	print("size="+str(myList.get_size()))
-	myList.remove(2)	# delete root node
+	myList.remove(2)
 	myList.print_list()
 	
 main()
