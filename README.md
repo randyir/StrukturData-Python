@@ -6,8 +6,9 @@
 NAMA    : RANDY IKHSAN RAMADHAN
 NIM     : 18360021
 Jurusan : TEKNIK INFORMATIKA
+
 INSTITUT SAINS DAN TEKNOLOGI NASIONAL
 </pre>
 Visit My Blog :
-httsp://randyikhsanramadhan.blogspot.com
+<a href=https://randyikhsanramadhan.blogspot.com>https://randyikhsanramadhan.blogspot.com</a>
 </html>
